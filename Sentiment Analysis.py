@@ -104,33 +104,33 @@ for tag, count in zip(final_words, frequency_words):
  
 #Use Gaussian probability density function to calculate probability
 #Find the class probabilities
-def Compute_Prob(original_data, inputVector):
-	probabilities = {}
-	for classValue, classoriginal_data in original_data.iteritems():
-		probabilities[classValue] = 1
-		for i in range(len(classoriginal_data)):
-			mean, stdev = classoriginal_data[i]
-			x = inputVector[i]
-			probabilities[classValue] *= calculateProbability(x, mean, stdev)
-	return probabilities
+# def Compute_Prob(original_data, inputVector):
+	# probabilities = {}
+	# for classValue, classoriginal_data in original_data.iteritems():
+		# probabilities[classValue] = 1
+		# for i in range(len(classoriginal_data)):
+			# mean, stdev = classoriginal_data[i]
+			# x = inputVector[i]
+			# probabilities[classValue] *= calculateProbability(x, mean, stdev)
+	# return probabilities
 
 # Find out largest probability
 # Using this make a prediction
-def make_prediction(original_data, inputVector):
-	probabilities = calculateClassProbabilities(original_data, inputVector)
-	bestLabel, bestProb = None, -1
-	for classValue, probability in probabilities.iteritems():
-		if bestLabel is None or probability > bestProb:
-			bestProb = probability
-			bestLabel = classValue
-	return bestLabel
+# def make_prediction(original_data, inputVector):
+	# probabilities = calculateClassProbabilities(original_data, inputVector)
+	# bestLabel, bestProb = None, -1
+	# for classValue, probability in probabilities.iteritems():
+		# if bestLabel is None or probability > bestProb:
+			# bestProb = probability
+			# bestLabel = classValue
+	# return bestLabel
 	
-def Classifier2(processed_data,target):
-    # Performing cross validation 60% training, 40% test
-    data_train,data_test,target_train,target_test = cross_validation.train_test_split(data,target,test_size=0.4,random_state=43)
-    classifier = BernoulliNB().fit(data_train,target_train)
-    predicted = classifier.predict(data_test)
-    evaluate_model(target_test,predicted)
+# def Classifier2(processed_data,target):
+    # # Performing cross validation 60% training, 40% test
+    # data_train,data_test,target_train,target_test = cross_validation.train_test_split(data,target,test_size=0.4,random_state=43)
+    # classifier = BernoulliNB().fit(data_train,target_train)
+    # predicted = classifier.predict(data_test)
+    # evaluate_model(target_test,predicted)
 
     
 print "Implementing the Random Forest classifier"
