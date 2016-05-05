@@ -1,12 +1,12 @@
-import pandas as pd       
+import pandas as pd      # Pandas open source library needed 
 train = pd.read_csv("training data.csv", header=0)
                     
 # Import BeautifulSoup 
-from bs4 import BeautifulSoup             
+from bs4 import BeautifulSoup # Beautiful Soup library needed            
 
 import re
 
-import nltk
+import nltk # Natural Language Toolkit library needed
 
 from nltk.corpus import stopwords # Get the list of stopwords
 
@@ -65,7 +65,7 @@ for i in xrange( 0, total_reviews ):
     processed_data.append( preprocess( train["review"][i] ) )
 
 print "Creating the bag of words...\n"
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer # scikit-learn library needed
 
 # Using scikit-learn's
 # bag of words tool.  
@@ -133,7 +133,7 @@ def Classifier2(processed_data,target):
     evaluate_model(target_test,predicted)
 
     
-print "Implementing random classifier algorithm..."
+print "Implementing the Random Forest classifier"
 from sklearn.ensemble import RandomForestClassifier
 
 # Hundred decision trees for the classifier
@@ -145,7 +145,7 @@ classifier = RandomForestClassifier(n_estimators = 100)
 classifier = classifier.fit( create_feat_vectors, train["sentiment"] )
 
 # Read the test data
-print "Reading test data..."
+print "Reading the given test data"
 test = pd.read_csv("test data final confirmed.csv", header=0 )
 
 # Check the dimensions
@@ -161,7 +161,7 @@ processed_reviews = []
 print "Processing the movie reviews present in the test data set...\n"
 for i in xrange(0,total_reviews):
     if( (i+1) % 1000 == 0 ):
-        print "Review %d of %d\n" % (i+1, total_reviews)
+        print "Review %d of %d\n done" % (i+1, total_reviews)
     new_data = preprocess( test["review"][i] )
     processed_reviews.append( new_data )
 
