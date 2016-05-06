@@ -7,7 +7,9 @@ There are two methods of installing these modules and getting the code up and ru
 Next, open windows command prompt and navigate to the directory where you saved the get-pip.py file in the above step and then run the following command.
 python get-pip.py to install pip
 That completes the pip installation now all the above mentioned required python modules can be easily installed using the necessary pip command which is usually in the following format
+
 pip install beautifulsoup4
+
 We however need to search for the exact pip command for each module in their respective documentations. To avoid the hassle we in fact used the second enlisted method.
 
 2.	Alternately we can install a software ‘Enthought Canopy’ which is a comprehensive Python analysis 	environment with integrated IDE, Compiler, Modules Installer etc. It can be downloaded here - 	https://www.enthought.com/products/canopy/
