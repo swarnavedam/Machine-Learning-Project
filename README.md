@@ -12,6 +12,7 @@ pip install beautifulsoup4
 
 We however need to search for the exact pip command for each module in their respective documentations. To avoid the hassle we in fact used the second enlisted method.
 
+
 2.	Alternately we can install a software ‘Enthought Canopy’ which is a comprehensive Python analysis 	environment with integrated IDE, Compiler, Modules Installer etc. It can be downloaded here - 	https://www.enthought.com/products/canopy/
 After installing the software, open the ‘Package Manager’ from the welcome page of the software. Look up the required modules using the search feature and install them with one click.
 Now we are ready to run the code. Download training data.csv and test data.csv from https://drive.google.com/file/d/0Bz4sXh4nTtM9YlhYVWtmV0Fhenc/view?usp=sharing
