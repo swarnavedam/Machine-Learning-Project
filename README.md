@@ -3,7 +3,7 @@ Topic: Sentiment Analysis on Movie Reviews Team: Anirban, Murtaza and Swarna
 We have used the following Python packages in our code, which need to be installed first: pandas, numpy, scikit-learn, Beautiful Soup, NLTK.
 There are two methods of installing these modules and getting the code up and running.
 
-1.	The installation process can be done using a software called pip, which can automatically download and 	install Python modules for us. The easiest way to install pip is through the use of a python program called 	get-pip.py, located at https://bootstrap.pypa.io/get-pip.py . Save this page under its default name get-	pip.py.
+1.	The installation process can be done using a software called pip, which can automatically download and 	install Python modules for us. The easiest way to install pip is through the use of a python program called 	get-pip.py, located at https://bootstrap.pypa.io/get-pip.py . Save this page under its default name get-pip.py.
 Next, open windows command prompt and navigate to the directory where you saved the get-pip.py file in the above step and then run the following command.
 python get-pip.py to install pip
 That completes the pip installation now all the above mentioned required python modules can be easily installed using the necessary pip command which is usually in the following format
