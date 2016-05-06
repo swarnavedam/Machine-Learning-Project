@@ -8,6 +8,8 @@ import re
 
 import nltk # Natural Language Toolkit library needed
 
+nltk.download() # For downloading the stop words
+
 from nltk.corpus import stopwords # Get the list of stopwords
 
 # def load_file():
