@@ -1,4 +1,5 @@
 Topic: Sentiment Analysis on Movie Reviews Team: Anirban, Murtaza and Swarna
+
 We have used the following Python packages in our code, which need to be installed first: pandas, numpy, scikit-learn, Beautiful Soup, NLTK.
 There are two methods of installing these modules and getting the code up and running.
 
