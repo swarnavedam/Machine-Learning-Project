@@ -148,7 +148,7 @@ classifier = classifier.fit( create_feat_vectors, train["sentiment"] )
 
 # Read the test data
 print "Reading the given test data"
-test = pd.read_csv("test data final confirmed.csv", header=0 )
+test = pd.read_csv("test data.csv", header=0 )
 
 # Check the dimensions
 # 25,000 Rows
